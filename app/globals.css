@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #d41111;
+  --color-surface: #F8F8F8;
+  --color-muted: #888888;
+  --color-border-color: #E5E5E5;
+  --color-background-light: #f8f6f6;
+  --color-background-dark: #221010;
+  --font-sans: var(--font-inter);
+  --font-heading: var(--font-instrument-serif);
+}
+
+@layer base {
+  body {
+    @apply bg-white text-[#111111] antialiased font-sans;
+  }
+}
+
+/* Brutalist minimalistic scrollbar */
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: #E5E5E5; }
+::-webkit-scrollbar-thumb:hover { background: #888888; }
